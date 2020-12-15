@@ -23,16 +23,25 @@ let ford = {
     }
 }
 
-
 /**
  * Votre code commence ici !
  */
 let voitures = {
     garage: 'concession',
     lieu: 'Fourmies',
-    // Dans un tableau, ajouter les différentes voitures que vous possédez.
-    collection: [], // Vos voitures dans cette propriété !
+     collectionArray = [citroen,peugeot,ford];// Dans un tableau, ajouter les différentes voitures que vous possédez.
+     collectionArray.citroen;
+     collectionArray.peugeot;
+     collectionArray.ford; // Vos voitures dans cette propriété !
 }
+
+// je parcours les objets avec la boucle for in
+let collectionArray = [citroen,peugeot,ford];
+
+for (let value in collectionArray) {
+    console.log(value + collectionArray);
+}
+
 
 // FIXME Parcourrez le tableau dans lequel vous avez placé vos objets.
 // TODO ==> invoquez la méthode ouvrirPorte pour chaque voiture de la collection.
