@@ -26,20 +26,18 @@ let ford = {
 /**
  * Votre code commence ici !
  */
-let voitures = {
+let Voitures = {
     garage: 'concession',
     lieu: 'Fourmies',
-     collectionArray = [citroen,peugeot,ford];// Dans un tableau, ajouter les différentes voitures que vous possédez.
-     collectionArray.citroen;
-     collectionArray.peugeot;
-     collectionArray.ford; // Vos voitures dans cette propriété !
+    collectionArray: [citroen, peugeot, ford], // Dans un tableau, ajouter les différentes voitures que vous possédez
 }
 
-// je parcours les objets avec la boucle for in
-let collectionArray = [citroen,peugeot,ford];
-
-for (let value in collectionArray) {
-    console.log(value + collectionArray);
+let p = document.querySelector('p');
+for (let value of Voitures.collectionArray) {
+    let span1 = document.createElement('span');
+    span1.innerHTML = value.color;
+    value.ouvrirPorte();
+    p.append(span1);
 }
 
 
